@@ -34,14 +34,14 @@ List append(List lst, Node n) {
 List insertAt(List lst, Node n, int pos) {
   // your code here
   Node nde = lst.head;
-  Node next_nde = {|lst.head.next|lst.head|};
+  Node next_nde = {|lst.head(.next)?|};
   for(int i=??;i<{|pos|pos+1|pos-1|};i+=??)
   {
     nde = {|nde.next|next_nde.next|};
     next_nde = {|nde.next|next_nde.next|};
   }
-  {|nde|nde.next|} = new Node(next = {|null|n|}, val = {|n.val|nde.val|});
-  {|nde.next|nde.next.next|} = {|next_nde|n|nde|};
+  {|(nde|next_nde)(.next)?|} = new Node(next = {|null|n|}, val = {|(n|nde).val|});
+  {|nde.next(.next)?|} = {|next_nde|n|nde|};
   return lst;
 }
 

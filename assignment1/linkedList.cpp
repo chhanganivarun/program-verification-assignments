@@ -55,11 +55,11 @@ void populate(List* l, List*& _out) {
 void insertAt(List* lst, Node* n, int pos, List*& _out) {
   Node*  nde=lst->head;
   Node*  next_nde=lst->head->next;
-  bool  __sa1=(1) < (pos);
+  bool  __sa1=(0) < ((pos - 1));
   while (__sa1) {
     nde = next_nde->next;
     next_nde = next_nde->next;
-    __sa1 = (1) < ((pos + 1));
+    __sa1 = (0) < (pos);
   }
   Node*  _tmprhs_s8=Node::create(NULL, n->val);
   nde->next = _tmprhs_s8;
