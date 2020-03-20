@@ -182,3 +182,5 @@ requires initialState.n>=2==> initialState.b == fibb(initialState.n - initialSta
 Post condition
 ensures initialState.n>=2 ==> finalState.a == fibb(initialState.n - initialState.i+2)
 ensures initialState.n>=2 ==> finalState.b == fibb(initialState.n - initialState.i+1)
+
+Q3

@@ -24,7 +24,7 @@ requires initialState.arr.Length >=2
 
 requires sorted(initialState.arr,initialState.sf,initialState.arr.Length-1)
 
-ensures sorted(finalState.arr,finalState.sf,finalState.arr.Length-1)
+// ensures sorted(finalState.arr,finalState.sf,finalState.arr.Length-1)
 ensures finalState.sf < finalState.arr.Length-1
 ensures finalState.sf+1 < finalState.arr.Length
 ensures 0<=finalState.sf<=initialState.arr.Length-1
