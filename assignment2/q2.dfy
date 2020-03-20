@@ -10,8 +10,6 @@ function method FibonacciTransitions(initialState: StateSpace): StateSpace
 decreases initialState.i
 requires initialState.n>=0
 requires initialState.i >=0
-// requires initialState.a == fibb(initialState.n - initialState.i-1)
-// requires initialState.b == fibb(initialState.n - initialState.i-0)
 {
     if initialState.n == 0 then StateSpace(0,0,0,initialState.n)
     else if initialState.i <= 2 then StateSpace(0,initialState.a+initialState.b,initialState.a,initialState.n)
